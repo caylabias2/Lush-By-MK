@@ -9,9 +9,9 @@
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	outline: none; border:none;
 	text-decoration: none;
-	text-transform: capitalize;
 	transition: .2s linear;
 	font-family: 'Bobogo';
+	color: white;
 }
 
 html {
@@ -24,6 +24,8 @@ body {
 	width: 100%;
 	background-color: black;
 }
+
+/* Start of the Navbar section */
 
 header{ 
 	position: fixed;
@@ -77,6 +79,8 @@ header .fa-bars{
 	display: none;
 }
 
+/* Start of the Top Home Section with Pictures */
+
 .home {
   min-height: 100vh;
   width: 100%;
@@ -99,17 +103,43 @@ header .fa-bars{
                  0 0 30px pink; /* Even larger red glow */
 }
 
-
 .home-pictures {
 	display: flex;
 	align-items: center;
 }
+
 .home-pictures img{
 	width: 33.33%;
 }
 
 
+/* Start of the Meet the CEO Section */
+.ceo {
+	font-size: 4vw;
+	padding-top: 4vw;
+}
 
+.ceo h2 {
+	text-align: center;
+	font-style: italic;
+}
+
+.ceo-info {
+	display: flex;
+	padding: 2vw 2vw;
+	gap: 3vw;
+	text-align: center;
+}
+
+.ceo-info img {
+	width: 90vw;
+	height: 35vw;
+	border-radius: 50%;
+}
+
+.ceo p {
+	font-size: 3.3vw;
+}
 
 
 
@@ -163,7 +193,11 @@ header .fa-bars{
 	.home-title {
 		margin-top: -6vw;
 		font-size: 11vw;
-	}	
+	}
+	.ceo-info img {
+		width: 90vw;
+		height: 20rem;
+	}
 }
 
 @media (max-width:768px) {
@@ -194,7 +228,8 @@ header .fa-bars{
 	.home-title {
 		margin-top: -7vw;
 		font-size: 13vw;
-	}	
+	}
+		
 }
 
 @media (max-width:600px) {
@@ -207,5 +242,13 @@ header .fa-bars{
 	}	
 	.home {
 		margin-top: 8rem;
+	}
+	.ceo-info img {
+		width: 90%;
+		height: 15rem;
+		margin-top: 10px;
+	}
+	.ceo p {
+		font-size: 3.8vw;
 	}
 }
