@@ -1,6 +1,10 @@
 @font-face {
-	font-family: 'Bobogo';
-	src: url("bobogo_2/Bobogo.otf");
+	font-family: 'Christmas Greetings';
+	src: url('/christmas_greetings/Christmas\ Greetings.otf');
+}
+@font-face {
+	font-family: 'Druk Wide';
+	src: url('/druk-wide-bold/DrukWideBold.ttf');
 }
 
 * {
@@ -10,12 +14,12 @@
 	outline: none; border:none;
 	text-decoration: none;
 	transition: .2s linear;
-	font-family: 'Bobogo';
+	font-family: 'Druk Wide';
 	color: white;
 }
 
 html {
-	font-size: 80.5%;
+	font-size: 50.5%;
 	overflow-x: hidden;
 	width: 100%;
 }
@@ -31,7 +35,7 @@ header{
 	position: fixed;
 	top: 0; left: 0; right: 0; 
 	background: pink;
-	padding: 2rem 9%;
+	padding: 2rem 2%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -40,7 +44,8 @@ header{
 }
 
 header .logo {
-	font-size: 3rem;
+	font-size: 2.5rem;
+	margin-right: -8vw;
 	color: rgb(96, 48, 1);
 	font-weight: bolder;
 }
@@ -88,10 +93,10 @@ header .fa-bars{
 }
 
 .home-title {
-	margin-top: -6vw;
+	margin-top: -5vw;
 	width: 100%;
 	text-align: center;
-	font-size: 11vw;
+	font-size: 8.5vw;
 	color: rgb(255, 255, 255);
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 	 /* adjusts spacing below header */
@@ -112,16 +117,22 @@ header .fa-bars{
 	width: 33.33%;
 }
 
+/* End of the Top of the Home Section */
+
 
 /* Start of the Meet the CEO Section */
-.ceo {
-	font-size: 4vw;
+.container {
 	padding-top: 4vw;
 }
 
-.ceo h2 {
+.container h2 {
 	text-align: center;
 	font-style: italic;
+	font-size: 4vw;
+}
+
+.cursive {
+	font-family:'Christmas Greetings';
 }
 
 .ceo-info {
@@ -137,9 +148,37 @@ header .fa-bars{
 	border-radius: 50%;
 }
 
-.ceo p {
-	font-size: 3.3vw;
+.container p {
+	font-size: 2.5vw;
 }
+
+/* End of the CEO Section */
+
+
+/* Start of the Policies Section */
+.policies-table {
+	margin: 0 auto;
+	font-size: 1.23vw;
+	border-spacing: 30px;
+}
+
+.policies-table td {
+	align-items: center;	
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+	padding-left: 4vw;
+}
+
+.table-header {
+	text-align: center;
+	border: none;
+	font-size: 3vw;
+}
+
+td {
+	border: 0.5vw solid white;
+}
+
 
 
 
@@ -182,17 +221,16 @@ header .fa-bars{
 /* media queries */
 @media (max-width:991px) {
 	html {
-		font-size: 80%;
+		font-size: 50%;
 	}
 	header {
 		padding: 2rem;
 	}
+	header .logo {
+		margin-right: -1vw;
+	}
 	.home {
 		margin-top: 7rem;
-	}
-	.home-title {
-		margin-top: -6vw;
-		font-size: 11vw;
 	}
 	.ceo-info img {
 		width: 90vw;
@@ -224,21 +262,12 @@ header .fa-bars{
 		border: .25rem solid rgb(96, 48, 1);
 		border-radius: 1rem;
 		display: block;
-	}
-	.home-title {
-		margin-top: -7vw;
-		font-size: 13vw;
-	}
-		
+	}	
 }
 
 @media (max-width:600px) {
 	html {
-		font-size: 60%;
-	}
-	.home-title {
-		margin-top: -7vw;
-		font-size: 13vw;
+		font-size: 50%;
 	}	
 	.home {
 		margin-top: 8rem;
