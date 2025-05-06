@@ -1,6 +1,10 @@
 @font-face {
-	font-family: 'Bobogo';
-	src: url("bobogo_2/Bobogo.otf");
+	font-family: 'Christmas Greetings';
+	src: url('/christmas_greetings/Christmas\ Greetings.otf');
+}
+@font-face {
+	font-family: 'Druk Wide';
+	src: url('/druk-wide-bold/DrukWideBold.ttf');
 }
 
 * {
@@ -9,13 +13,13 @@
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	outline: none; border:none;
 	text-decoration: none;
-	text-transform: capitalize;
 	transition: .2s linear;
-	font-family: 'Bobogo';
+	font-family: 'Druk Wide';
+	color: white;
 }
 
 html {
-	font-size: 80.5%;
+	font-size: 50.5%;
 	overflow-x: hidden;
 	width: 100%;
 }
@@ -25,11 +29,13 @@ body {
 	background-color: black;
 }
 
+/* Start of the Navbar section */
+
 header{ 
 	position: fixed;
 	top: 0; left: 0; right: 0; 
 	background: pink;
-	padding: 2rem 9%;
+	padding: 2rem 2%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -38,7 +44,8 @@ header{
 }
 
 header .logo {
-	font-size: 3rem;
+	font-size: 2.5rem;
+	margin-right: -8vw;
 	color: rgb(96, 48, 1);
 	font-weight: bolder;
 }
@@ -77,6 +84,8 @@ header .fa-bars{
 	display: none;
 }
 
+/* Start of the Top Home Section with Pictures */
+
 .home {
   min-height: 100vh;
   width: 100%;
@@ -84,10 +93,10 @@ header .fa-bars{
 }
 
 .home-title {
-	margin-top: -6vw;
+	margin-top: -5vw;
 	width: 100%;
 	text-align: center;
-	font-size: 11vw;
+	font-size: 8.5vw;
 	color: rgb(255, 255, 255);
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 	 /* adjusts spacing below header */
@@ -97,18 +106,168 @@ header .fa-bars{
     text-shadow: 0 0 10px pink, /* Red glow */
                  0 0 20px pink, /* Larger red glow */
                  0 0 30px pink; /* Even larger red glow */
+				 
 }
-
 
 .home-pictures {
 	display: flex;
 	align-items: center;
 }
+
 .home-pictures img{
 	width: 33.33%;
 }
 
+/* End of the Top of the Home Section */
 
+
+/* Start of the Meet the CEO Section */
+.container {
+	padding-top: 4vh;
+}
+
+.container-header {
+	font-size: 3vw;
+}
+
+.container-header-2 {
+	font-size: 5.2vw;
+}
+
+.container-header-3 {
+	font-size: 7.5vw;
+}
+
+.container-header-4 {
+	font-size: 5.4vw;
+}
+
+.container h2 {
+	text-align: center;
+	font-style: italic;
+}
+
+.cursive {
+	font-family:'Christmas Greetings';
+	margin: 10px 0;
+}
+
+.ceo-info {
+	display: flex;
+	padding: 2vw 2vw;
+	gap: 3vw;
+	text-align: center;
+}
+
+.ceo-info img {
+	width: 90vw;
+	height: 35vw;
+	border-radius: 50%;
+}
+
+.container p {
+	font-size: 2.5vw;
+}
+
+/* End of the CEO Section */
+
+
+/* Start of the Policies Section */
+.policies-table {
+	margin: 0 auto;
+	border-spacing: 30px;
+}
+
+.policies-table td {
+	align-items: center;	
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+	padding-left: 5vw;
+	padding-right: 1.5vw; 
+}
+
+.table-header {
+	text-align: center;
+	border: none;
+	font-size: 3vw;
+	padding-bottom: 30px;
+}
+
+.table-content {
+	background-color: pink;
+	box-shadow: 1px 1px 14px 3px rgba(0,0,0,0.46) inset;
+	text-shadow: .2vw .15vh .2vh black;
+	font-size: 2vw;
+	line-height: 3vw;
+	-webkit-text-stroke-width: .05vh;
+	-webkit-text-stroke-color: black;
+}
+
+td {
+	border: 0.8vw solid white;
+	border-radius: 5px;
+}
+
+
+/* End of Policies Section */
+
+.bottom-pictures {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	padding: 12vw 0;
+}
+
+.bottom-pictures img{
+	width: 40.33vw;
+	scale: 1.2;
+	rotate: -9deg;
+}
+.bottom-pictures h2 {
+	padding-top: 50px;
+	line-height: 15vw;
+}
+
+.footer {
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+.socialIcons {
+	text-align: center;
+	margin-left: 20px;
+}
+
+.socialIcons a {
+	border: .8vw pink solid; 
+	border-radius: 50%;
+	background-color: pink;
+	color: rgb(96, 48, 1);
+	font-size: 3.5vw;
+	margin: 0 1vw;
+}
+
+.footerNav li{
+	display: inline;
+	margin: 10px;
+	font-size: 1.9vw;
+	padding: 0 1.5vw;
+}
+
+.footerNav a:hover {
+	color: pink;
+}
+
+.footerNav {
+	padding-bottom: 4vw;
+	padding-top: 2vw;
+}
+
+.copyright p{
+	background-color:pink;
+	color: rgb(96, 48, 1);
+	font-size: 1.9vw;
+}
 
 
 
@@ -152,18 +311,17 @@ header .fa-bars{
 /* media queries */
 @media (max-width:991px) {
 	html {
-		font-size: 80%;
+		font-size: 50%;
 	}
 	header {
 		padding: 2rem;
 	}
+	header .logo {
+		margin-right: -1vw;
+	}
 	.home {
 		margin-top: 7rem;
 	}
-	.home-title {
-		margin-top: -6vw;
-		font-size: 11vw;
-	}	
 }
 
 @media (max-width:768px) {
@@ -187,25 +345,37 @@ header .fa-bars{
 		margin: 1.5rem;
 		padding: 1.5rem;
 		background: pink;
-		border: .25rem solid rgb(96, 48, 1);
+		border: .35rem solid rgb(96, 48, 1);
 		border-radius: 1rem;
 		display: block;
-	}
-	.home-title {
-		margin-top: -7vw;
-		font-size: 13vw;
 	}	
 }
 
 @media (max-width:600px) {
 	html {
-		font-size: 60%;
-	}
-	.home-title {
-		margin-top: -7vw;
-		font-size: 13vw;
+		font-size: 40%;
 	}	
 	.home {
 		margin-top: 8rem;
 	}
+	.ceo p {
+		font-size: 3.8vw;
+	}
+	.policies-table {
+		border-spacing: 12px;
+	}
+	.socialIcons a {
+		font-size: 3.7vw;
+		border: 1.5vw pink solid;
+	}
+	.table-content {
+		background-color: pink;
+		box-shadow: 0.2px 0.2px 6px 3px rgba(0,0,0,0.46) inset;
+		text-shadow: .2vw .15vh .2vh black;
+		font-size: 2.2vw;
+		line-height: 3.5vw;
+		-webkit-text-stroke-width: .009vh;
+		-webkit-text-stroke-color: black;
+	}
 }
+
