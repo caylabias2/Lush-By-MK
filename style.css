@@ -10,7 +10,6 @@
 * {
 	margin:0; padding:0;
 	box-sizing: border-box;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	outline: none; border:none;
 	text-decoration: none;
 	transition: .2s linear;
@@ -34,7 +33,7 @@ body {
 header{ 
 	position: fixed;
 	top: 0; left: 0; right: 0; 
-	background: pink;
+	background: #ffc0cb;
 	padding: 2rem 2%;
 	display: flex;
 	align-items: center;
@@ -106,6 +105,7 @@ header .fa-bars{
     text-shadow: 0 0 10px pink, /* Red glow */
                  0 0 20px pink, /* Larger red glow */
                  0 0 30px pink; /* Even larger red glow */
+				 
 }
 
 .home-pictures {
@@ -122,17 +122,33 @@ header .fa-bars{
 
 /* Start of the Meet the CEO Section */
 .container {
-	padding-top: 4vw;
+	padding-top: 4vh;
+}
+
+.container-header {
+	font-size: 3vw;
+}
+
+.container-header-2 {
+	font-size: 5.2vw;
+}
+
+.container-header-3 {
+	font-size: 7.5vw;
+}
+
+.container-header-4 {
+	font-size: 5.4vw;
 }
 
 .container h2 {
 	text-align: center;
 	font-style: italic;
-	font-size: 4vw;
 }
 
 .cursive {
 	font-family:'Christmas Greetings';
+	margin: 10px 0;
 }
 
 .ceo-info {
@@ -158,7 +174,6 @@ header .fa-bars{
 /* Start of the Policies Section */
 .policies-table {
 	margin: 0 auto;
-	font-size: 1.23vw;
 	border-spacing: 30px;
 }
 
@@ -166,19 +181,107 @@ header .fa-bars{
 	align-items: center;	
 	padding-bottom: 2vw;
 	padding-top: 2vw;
-	padding-left: 4vw;
+	padding-left: 5vw;
+	padding-right: 1.5vw; 
 }
 
 .table-header {
 	text-align: center;
 	border: none;
 	font-size: 3vw;
+	padding-bottom: 30px;
+}
+
+.table-content {
+	background-color: pink;
+	box-shadow: 1px 1px 14px 3px rgba(0,0,0,0.46) inset;
+	text-shadow: .2vw .15vh .2vh black;
+	font-size: 2vw;
+	line-height: 3vw;
+	-webkit-text-stroke-width: .05vh;
+	-webkit-text-stroke-color: black;
 }
 
 td {
-	border: 0.5vw solid white;
+	border: 0.8vw solid white;
+	border-radius: 5px;
 }
 
+
+/* End of Policies Section */
+
+.bottom-pictures {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	padding: 12vw 0;
+}
+
+.bottom-pictures img{
+	width: 40.33vw;
+	scale: 1.2;
+	rotate: -9deg;
+}
+.bottom-pictures h2 {
+	padding-top: 50px;
+	line-height: 15vw;
+}
+
+.footer {
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+.socialIcons {
+	text-align: center;
+	margin-left: 20px;
+}
+
+.socialIcons a {
+	border: .8vw pink solid; 
+	border-radius: 50%;
+	background-color: pink;
+	color: rgb(96, 48, 1);
+	font-size: 3.5vw;
+	margin: 0 1vw;
+}
+
+.footerNav li{
+	display: inline;
+	margin: 10px;
+	font-size: 1.9vw;
+	padding: 0 1.5vw;
+}
+
+.footerNav a:hover {
+	color: pink;
+}
+
+.footerNav {
+	padding-bottom: 4vw;
+	padding-top: 2vw;
+}
+
+.copyright p{
+	background-color:pink;
+	color: rgb(96, 48, 1);
+	font-size: 1.9vw;
+}
+
+.booking-body::-webkit-scrollbar {
+	display: none;
+}
+
+.booking-body {
+  overflow-y: auto;
+  background-color: #1a1a1a;
+}
+
+iframe {
+	width: 100%;
+	margin-top: 7vh;
+}
+  
 
 
 
@@ -232,10 +335,6 @@ td {
 	.home {
 		margin-top: 7rem;
 	}
-	.ceo-info img {
-		width: 90vw;
-		height: 20rem;
-	}
 }
 
 @media (max-width:768px) {
@@ -259,7 +358,7 @@ td {
 		margin: 1.5rem;
 		padding: 1.5rem;
 		background: pink;
-		border: .25rem solid rgb(96, 48, 1);
+		border: .35rem solid rgb(96, 48, 1);
 		border-radius: 1rem;
 		display: block;
 	}	
@@ -267,17 +366,29 @@ td {
 
 @media (max-width:600px) {
 	html {
-		font-size: 50%;
+		font-size: 40%;
 	}	
 	.home {
 		margin-top: 8rem;
 	}
-	.ceo-info img {
-		width: 90%;
-		height: 15rem;
-		margin-top: 10px;
-	}
 	.ceo p {
 		font-size: 3.8vw;
 	}
+	.policies-table {
+		border-spacing: 12px;
+	}
+	.socialIcons a {
+		font-size: 3.7vw;
+		border: 1.5vw pink solid;
+	}
+	.table-content {
+		background-color: pink;
+		box-shadow: 0.2px 0.2px 6px 3px rgba(0,0,0,0.46) inset;
+		text-shadow: .2vw .15vh .2vh black;
+		font-size: 2.2vw;
+		line-height: 3.5vw;
+		-webkit-text-stroke-width: .009vh;
+		-webkit-text-stroke-color: black;
+	}
 }
+
