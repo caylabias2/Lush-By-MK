@@ -8,10 +8,9 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 	<link rel = "stylesheet" href = "style.css">
-	<script src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
-    <script src="script.js"></script>
+    
 </head>
-<body>
+<body class="booking-body">
     	<!-- Header Section Starts -->
 		<header>
 		
@@ -23,13 +22,13 @@
 			
 			<nav class = "navbar">
 				<a href = "/index.html">Home</a>
-				<a href = "/booking.html">Book Now</a>
-				<a href = "/reviews">Reviews</a>
+				<a href = "booking.html">Book Now</a>
+				
 				<a href = "/contact">Contact</a>
 			</nav>
 			
 			<div class = "icons">
-				<a href = "#" class = "fas fa-shopping-cart"></a>
+				<a href = "#" class = "fas fa-heart"></a>
 			</div>
 			
 		</header>
@@ -37,9 +36,24 @@
 	<!-- Header Section Ends -->
 
     <!-- Booking Section Starts -->
-        <section class="booking" id="booking">
-            <div id="sbw_d4p4wy"></div>
-        </section>
+        
+		<iframe src="https://lushbymk.setmore.com" sandbox="allow-scripts allow-same-origin allow-forms">
+
+		</iframe>
+        	
+
     <!-- Booking Section Ends -->
+	 
+
+<script>
+  function adjustIframeHeight() {
+    const vh = window.innerHeight * 0.9387; // 93.9% of actual height
+    document.querySelector('iframe').style.height = `${vh}px`;
+  }
+
+  window.addEventListener('resize', adjustIframeHeight);
+  window.addEventListener('load', adjustIframeHeight);
+</script>
+
 </body>
 </html>

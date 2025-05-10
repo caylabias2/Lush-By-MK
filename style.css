@@ -10,7 +10,6 @@
 * {
 	margin:0; padding:0;
 	box-sizing: border-box;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	outline: none; border:none;
 	text-decoration: none;
 	transition: .2s linear;
@@ -34,7 +33,7 @@ body {
 header{ 
 	position: fixed;
 	top: 0; left: 0; right: 0; 
-	background: pink;
+	background: #ffc0cb;
 	padding: 2rem 2%;
 	display: flex;
 	align-items: center;
@@ -269,6 +268,20 @@ td {
 	font-size: 1.9vw;
 }
 
+.booking-body::-webkit-scrollbar {
+	display: none;
+}
+
+.booking-body {
+  overflow-y: auto;
+  background-color: #1a1a1a;
+}
+
+iframe {
+	width: 100%;
+	margin-top: 7vh;
+}
+  
 
 
 
