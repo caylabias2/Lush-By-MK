@@ -45,7 +45,6 @@ header{
 
 header .logo {
 	font-size: 2.5rem;
-	margin-right: -8vw;
 	color: rgb(96, 48, 1);
 	font-weight: bolder;
 }
@@ -194,14 +193,14 @@ header .fa-bars{
 }
 
 .table-content {
-	background-color: pink;
-	box-shadow: 1px 1px 14px 3px rgba(0,0,0,0.46) inset;
-	text-shadow: .2vw .15vh .2vh black;
-	font-size: 2vw;
-	line-height: 3vw;
-	-webkit-text-stroke-width: .05vh;
-	-webkit-text-stroke-color: black;
-}
+		background-color: pink;
+		box-shadow: 0.2px 0.2px 6px 3px rgba(0,0,0,0.46) inset;
+		text-shadow: .2vw .15vh .2vh black;
+		font-size: 2.2vw;
+		line-height: 3.5vw;
+		-webkit-text-stroke-width: .009vh;
+		-webkit-text-stroke-color: black;
+	}
 
 td {
 	border: 0.8vw solid white;
@@ -223,6 +222,7 @@ td {
 	scale: 1.2;
 	rotate: -9deg;
 }
+
 .bottom-pictures h2 {
 	padding-top: 50px;
 	line-height: 15vw;
@@ -250,7 +250,7 @@ td {
 .footerNav li{
 	display: inline;
 	margin: 10px;
-	font-size: 1.9vw;
+	font-size: 140%;
 	padding: 0 1.5vw;
 }
 
@@ -266,7 +266,7 @@ td {
 .copyright p{
 	background-color:pink;
 	color: rgb(96, 48, 1);
-	font-size: 1.9vw;
+	font-size: 2vw;
 }
 
 
@@ -309,21 +309,6 @@ td {
 
 
 /* media queries */
-@media (max-width:991px) {
-	html {
-		font-size: 50%;
-	}
-	header {
-		padding: 2rem;
-	}
-	header .logo {
-		margin-right: -1vw;
-	}
-	.home {
-		margin-top: 7rem;
-	}
-}
-
 @media (max-width:768px) {
 	header .fa-bars {
 		display: block;
@@ -339,15 +324,6 @@ td {
 	
 	header #toggler:checked ~ .navbar {
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-	}
-	
-	header .navbar a {
-		margin: 1.5rem;
-		padding: 1.5rem;
-		background: pink;
-		border: .35rem solid rgb(96, 48, 1);
-		border-radius: 1rem;
-		display: block;
 	}	
 }
 
@@ -377,5 +353,48 @@ td {
 		-webkit-text-stroke-width: .009vh;
 		-webkit-text-stroke-color: black;
 	}
+}
+
+
+@media (min-width:991px) {
+	html {
+		font-size: 50%;
+	}
+	header {
+		padding: 2rem;
+	}
+	header .logo {
+		margin-right: -1vw;
+	}
+	.home {
+		margin-top: 7rem;
+	}
+	.table-content {
+		background-color: pink;
+		box-shadow: 1px 1px 14px 3px rgba(0,0,0,0.46) inset;
+		text-shadow: .2vw .15vh .2vh black;
+		font-size: 2vw;
+		line-height: 3vw;
+		-webkit-text-stroke-width: .05vh;
+		-webkit-text-stroke-color: black;
+	}
+
+	.bottom-pictures img{
+		width: 40.33vw;
+		scale: 1.2;
+		rotate: -9deg;
+	}
+	
+	.footerNav li{
+		display: inline;
+		margin: 10px;
+		font-size: 1.5vw;
+		padding: 0 1.5vw;
+	}
+
+	.copyright p {
+		font-size: 2.5rem;
+	}
+	
 }
 
