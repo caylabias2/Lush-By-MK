@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<title> Lush By MK </title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<link rel = "stylesheet" href = "style.css">
+    
+</head>
+<body class="booking-body">
+    	<!-- Header Section Starts -->
+		<header>
+		
+			<input type = "checkbox" name = "" id = "toggler">
+			<label for = "toggler" class = "fas fa-bars"></label>
+			
+			
+			<a href = "#" class = "logo">Lush By MK</a>
+			
+			<nav class = "navbar">
+				<a href = "index.html">Home</a>
+				<a href = "booking.html">Book Now</a>
+			</nav>
+			
+			<div class = "icons">
+				<a href = "#" class = "fas fa-heart"></a>
+			</div>
+			
+		</header>
+
+	<!-- Header Section Ends -->
+
+    <!-- Booking Section Starts -->
+        
+		<iframe src="https://lushbymk.setmore.com" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+        	
+
+    <!-- Booking Section Ends -->
+	 
+
+<script>
+  function adjustIframeHeight() {
+    const vh = window.innerHeight * 0.9387; // 93.9% of actual height
+    document.querySelector('iframe').style.height = `${vh}px`;
+  }
+
+  window.addEventListener('resize', adjustIframeHeight);
+  window.addEventListener('load', adjustIframeHeight);
+</script>
+
+</body>
+</html>
