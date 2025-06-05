@@ -193,14 +193,14 @@ header .fa-bars{
 }
 
 .table-content {
-		background-color: pink;
-		box-shadow: 0.2px 0.2px 6px 3px rgba(0,0,0,0.46) inset;
-		text-shadow: .2vw .15vh .2vh black;
-		font-size: 2.2vw;
-		line-height: 3.5vw;
-		-webkit-text-stroke-width: .009vh;
-		-webkit-text-stroke-color: black;
-	}
+	background-color: pink;
+	box-shadow: 0.2px 0.2px 6px 3px rgba(0,0,0,0.46) inset;
+	text-shadow: .2vw .15vh .2vh black;
+	font-size: 2.2vw;
+	line-height: 3.5vw;
+	-webkit-text-stroke-width: .009vh;
+	-webkit-text-stroke-color: black;
+}
 
 td {
 	border: 0.8vw solid white;
@@ -267,6 +267,10 @@ td {
 	background-color:pink;
 	color: rgb(96, 48, 1);
 	font-size: 2vw;
+}
+
+iframe {
+	width: 100%;
 }
 
 
