@@ -321,6 +321,14 @@ td {
 		border-top: .3rem solid rgb(96, 48, 1);
 		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 	}
+
+	header .navbar a {
+		display: block;
+		margin: 1.5rem;
+		padding: 1.5rem;
+		border: .3rem solid rgb(96, 48, 1);
+		border-radius:.5rem;
+	}
 	
 	header #toggler:checked ~ .navbar {
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
