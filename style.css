@@ -21,8 +21,10 @@
 html {
 	font-size: 50.5%;
 	overflow-x: hidden;
+	
 	width: 100%;
 }
+
 
 body {
 	width: 100%;
@@ -271,6 +273,11 @@ td {
 
 iframe {
 	width: 100%;
+	margin-top: 6vh;
+}
+
+.booking-html {
+	overflow-y: hidden;
 }
 
 
