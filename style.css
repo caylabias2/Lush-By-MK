@@ -193,14 +193,14 @@ header .fa-bars{
 }
 
 .table-content {
-		background-color: pink;
-		box-shadow: 0.2px 0.2px 6px 3px rgba(0,0,0,0.46) inset;
-		text-shadow: .2vw .15vh .2vh black;
-		font-size: 2.2vw;
-		line-height: 3.5vw;
-		-webkit-text-stroke-width: .009vh;
-		-webkit-text-stroke-color: black;
-	}
+	background-color: pink;
+	box-shadow: 0.2px 0.2px 6px 3px rgba(0,0,0,0.46) inset;
+	text-shadow: .2vw .15vh .2vh black;
+	font-size: 2.2vw;
+	line-height: 3.5vw;
+	-webkit-text-stroke-width: .009vh;
+	-webkit-text-stroke-color: black;
+}
 
 td {
 	border: 0.8vw solid white;
@@ -269,6 +269,10 @@ td {
 	font-size: 2vw;
 }
 
+iframe {
+	width: 100%;
+}
+
 
 
 
@@ -320,6 +324,14 @@ td {
 		background: pink;
 		border-top: .3rem solid rgb(96, 48, 1);
 		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+
+	header .navbar a {
+		display: block;
+		margin: 1.5rem;
+		padding: 1.5rem;
+		border: .3rem solid rgb(96, 48, 1);
+		border-radius:.5rem;
 	}
 	
 	header #toggler:checked ~ .navbar {
